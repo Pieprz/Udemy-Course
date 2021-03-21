@@ -16,7 +16,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerPressed(_ sender: UIButton) {
 		
-		let alert = UIAlertController(title: "Can not procede registration", message: "The password must be 6 characters long or more or the email address is badly formatted.", preferredStyle: .alert)
+		let alert = UIAlertController(title: "Can not proceed registration", message: "The password must be 6 characters long or more or the email address is badly formatted.", preferredStyle: .alert)
 		alert.addAction(UIAlertAction(title: "Got it", style: .default, handler: nil))
 		
 		if let email = emailTextfield.text, let password = passwordTextfield.text {
