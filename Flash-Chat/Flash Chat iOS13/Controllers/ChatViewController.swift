@@ -14,9 +14,15 @@ class ChatViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var messageTextfield: UITextField!
 	
+	var messages: [Message] = [
+		Message(sender: "1@2.com", body: "Hey"),
+		Message(sender: "a@b.com", body: "Hello!"),
+		Message(sender: "1@2.com", body: "Wassup?")
+	]
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = "⚡️FlashChat"
+		title = K.appName
 		//navigationItem.hidesBackButton = true
 	}
 	
@@ -33,3 +39,5 @@ class ChatViewController: UIViewController {
 	}
 	
 }
+
+extension ChatViewController
